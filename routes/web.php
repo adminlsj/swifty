@@ -11,9 +11,9 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/upload', function () {
-    return view('file/index');
-})->middleware(['auth', 'verified'])->name('upload');
+Route::get('/subscribe', function () {
+    return view('file/subscribe');
+})->middleware(['auth', 'verified'])->name('subscribe');
 
 Route::get('/show', function () {
     return view('file/show');
